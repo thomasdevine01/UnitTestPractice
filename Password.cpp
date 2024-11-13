@@ -38,6 +38,6 @@ bool Password::has_mixed_case(string pass){
       hasLower ^= true;
     }
   }
-  return hasUpper ^ hasLower;
+  return hasUpper && hasLower;
 
 }
